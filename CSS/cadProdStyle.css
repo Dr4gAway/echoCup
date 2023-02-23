@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --main-width: 1080px;
+    --nav-height: 5rem;
+
+    --distance-inline: 10rem;
+    --distance-block: 4rem;
+    
+    --light-base-color: #F2F2F2;
+    --base-color: #FF74B1;
+    --base-second-color: #FFA1CF;
+    --font-color: #020202;
+    --second-font-color: #2c2c2c;
+    --background-color: #FFF9F9;
+}
+
+body {
+    background-image: url(../images/sample-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+    
+}
+
+.prod-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.15);
+    align-items: center;
+    padding: 5%;
+    
+    width: 100%;
+    max-width: 700px;
+    min-height: 100vh;
+}
+
+.prod-wrapper h1{
+    color: var(--base-second-color);
+    align-self: flex-start;
+    font-size: 3.5rem;
+    font-weight: 800;
+    max-width: 40rem;
+}
+
+.prod-inputs {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    
+    height: 100%;
+}
+
+.prod-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 150px;
+    gap: .5rem;
+}
+
+.prod-input-c-wrapper {
+    display: flex;
+    gap: .5rem;
+}
+
+.prod-input-c {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    gap: .5rem;
+}
+
+.prod-input-wrapper:nth-child(2) > .prod-input-c:nth-child(1) {
+    flex-direction: row;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+
+input {
+    border: none;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    min-width: 10px;
+}
+
+.prod-input-c input {
+    flex: 1 1 0;
+    padding: 1rem;
+    background-color:#ECECEC;
+}
+
+
+#desc {
+    flex: 1;
+    resize: none;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #ECECEC;
+    border: none;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+/*Gambiaras*/
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+input:focus, #desc:focus {
+    outline: 3px solid var(--base-color);
+}
+
+input[type="submit"] {
+    height: 100px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    background-color: var(--base-second-color);
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: var(--base-color);
+    box-shadow: 0 0 10px 1px var(--base-color);
+}
+
+
+/*-----Media Queries-----*/
+
+@media (max-width: 1045px) {
+    .prod-input-c-wrapper {
+        flex-direction: column;
+    }
+
+}
+

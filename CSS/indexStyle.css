@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;400&display=swap');
+/* defeult */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-width: 1080px;
+    --nav-height: 5rem;
+
+    --distance-inline: 10rem;
+    --distance-block: 4rem;
+    
+    --light-base-color: #F2F2F2;
+    --base-color: #FF74B1;
+    --base-second-color: #FFA1CF;
+    --font-color: #020202;
+    --second-font-color: #2c2c2c;
+    --background-color: #FFF9F9;
+}
+
+body{
+    background-color: var(--light-base-color);
+}
+
+.container {
+    padding: var(--distance-block) var(--distance-inline);
+}
+
+/*-----CSS de Verdade-----*/
+
+/*---Carrosel---*/
+
+.carousel-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    filter: brightness(0.7);
+}
+
+.arrow{
+    border: solid rgb(208, 208, 208);
+    mix-blend-mode:color-dodge;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 24px;
+}
+
+.arrow-prev {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.item-1 {
+    opacity: 1;
+    background: url(../images/Blue-cup.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-2 {
+    background: url(../images/Pink-cup.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.item-3 {
+    background: url(../images/Purple-cup.png);
+    background-size: cover;
+    background-position: center;
+}
+
+*:target ~ .item-1{
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1, #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 1;
+    opacity: 1;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.homeContent{
+    position: absolute;
+    z-index: 2;
+    width: 30%;
+    text-align: center;
+    
+}
+
+.homeContent h2, .homeContent p{
+    color: rgb(255, 255, 255);
+    
+}
+
+.homeButton{
+    margin-top: 25px;
+}
+
+.button:first-child{
+    padding: 0.5rem 1rem;
+    background-color: var(--base-second-color);
+    color: var(--light-base-color);
+    transition: 0.3s;
+    border-radius: .5rem;
+    margin: 0.4rem;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.button{
+    padding: 0.5rem 1rem;
+    background-color: var(--base-second-color);
+    color: var(--light-base-color);
+    transition: 0.3s;
+    border-radius: .5rem;
+    margin: 0.4rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.button:first-child{
+    font-size: 1.125rem;
+}
+
+.button:active,
+.button:hover{
+    background-color: var(--base-color);
+    color: var(--light-base-color);
+
+}
+
+/* examples */
+#examples{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.card{
+    display: grid;
+    place-items: center;
+    width: 20rem;
+}
+
+.cardImg{
+    width: 20rem;
+}
+
+/* video */
+.videoContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light-base-color);
+}
+
+#iframe{
+    width: 35rem;
+    height: 19.6875rem;
+    margin-left: 1rem;
+}
+
+iframe,
+.videoText{
+    margin:1rem 1rem;
+}
+
+.videoText{
+    width: 35rem;
+}
+
+#video h2{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+#video p{
+    margin-bottom: 2rem;
+}
+
+
+/* prod */
+#prod{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#prod h2{
+    text-align: center;
+}
+
+.someProducts{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.prodButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

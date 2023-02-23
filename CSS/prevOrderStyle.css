@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;400&display=swap');
+
+:root {
+    --main-width: 1080px;
+    --nav-height: 5rem;
+
+    --distance-inline: 10rem;
+    --distance-block: 4rem;
+    
+    --light-base-color: #F2F2F2;
+    --base-color: #FF74B1;
+    --base-second-color: #FFA1CF;
+    --font-color: #020202;
+    --second-font-color: #2c2c2c;
+    --background-color: #FFF9F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+a, p, h1, h2 {
+    color: var(--font-color);
+}
+
+main span {
+    color: var(--font-color);
+}
+
+main{
+    min-height: 60vh;
+}
+
+.order {
+    margin: var(--distance-block) var(--distance-inline);
+    border-radius: 1rem;
+
+    box-shadow: 0px 0px 7px -1px var(--base-color);
+}
+
+/*-----Header da venda-----*/
+
+
+
+.order-header-wrapper {
+    
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 1rem; border-top-right-radius: 1rem;
+    background-color: var(--base-second-color);
+    
+    align-items: center;
+}
+
+.order-information {
+    display: flex;
+    gap: 1rem;
+}
+
+.order-information-item {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.order-information:last-child .order-information-item:last-child {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+/*-----Items da venda*/
+.order-items {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 2.5rem;
+    background-color: var(--light-base-color)
+}
+
+.order-items order-items:last-child{
+    border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;
+}
+
+.order-items-item {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+.order-items-information {
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    padding-left: .5rem;
+    border-left: 2px solid var(--second-font-color);
+    font-weight: 600;
+    color: var(--second-font-color);
+}
+
+.order-information-item span:first-child{
+    font-weight: 600;
+}
+
+.order-items-information span:first-child {
+    font-size: 24px;
+    color: var(--font-color);
+}
+
+/*Fazer "Mostrar menos" quando clicado com o JS*/
+
+.order-information-show{
+    color: var(--light-base-color);
+}
+
+.order-information-show:hover {
+    cursor: pointer;
+}
+
+
+.order-item-img {
+    width: 100%;
+    max-width: 125px;
+}
+
+/*-----Botão de Comprar novamente-----*/
+
+.order-items-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.order-items-buy span:last-child {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--background-color);
+    background-color: var(--base-color);
+
+    transition: 0.2s;
+}
+
+.order-items-buy span:last-child:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+/*Funções pra sumir com as parada*/
+
+.order-header-wrapper.show-more {
+    border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem;
+}
+
+.order-items.off {
+    display: none;
+}

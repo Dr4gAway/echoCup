@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;400&display=swap');
+/* defeult */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-width: 1080px;
+    --nav-height: 5rem;
+
+    --distance-inline: 10rem;
+    --distance-block: 4rem;
+    
+    --light-base-color: #F2F2F2;
+    --base-color: #FF74B1;
+    --base-second-color: #FFA1CF;
+    --font-color: #020202;
+    --second-font-color: #2c2c2c;
+    --background-color: #FFF9F9;
+}
+
+/* devs */
+#devs{
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    gap: 1.5rem;
+}
+
+#devs h2{
+    margin-bottom: 3rem;
+}
+
+.dev{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--base-second-color);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.dev img{
+    width: 10vw;
+}
+
+#logoSection{
+    width: 15rem;
+    margin-bottom: 2.5rem;
+}
+
+span{
+    color: var(--font-color);
+}

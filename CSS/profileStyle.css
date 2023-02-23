@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family:'Open Sans', sans-serif;
+}
+
+:root {
+    --light-base-color: #f2f2f2;
+    --base-color: #FF74B1;
+    --base-second-color: #FFA1CF;
+    --font-color: #020202;
+    --second-font-color: #2c2c2c;
+    --background-color: #FFF9F9; 
+
+}
+
+body{
+    background-color: var(--light-base-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mae{
+    width: 960px;
+    min-height: 480px;
+    display: flex;
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.8);
+
+    margin-top: 5rem;
+    font-size: 2rem;
+
+}
+
+.mae .left{
+    width: 35%;
+    background: linear-gradient(to right, #FFA1CF, #FF74B1);
+    padding: 30px 25px;
+    text-align: center;
+    color: #020202;
+    padding-top: 100px;
+}
+
+.mae .left img{
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    height: 200px;
+    width: 200px;
+
+}
+.mae .left h4{
+    margin-bottom: 10px;
+}
+
+.mae .left p{
+    font-size: 12px;
+}
+
+.mae .right{
+    width: 65%;
+    background: #f2f2f2;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 30px 25px; 
+}
+
+.mae .right .info{
+    margin-bottom: 25px;
+}
+
+.mae .right .info h3{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #FF74B1;
+    color: #020202;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+
+.mae .right .info_data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mae .right .info_data .data{
+    width: 45%;
+}
+
+.mae .right .info_data .data label{
+    color: #020202;
+    margin-bottom: 5px;
+}
+
+.mae .right .info_data .data input{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #2c2c2c;
+    opacity: 55%;
+}
+
+.mae .right .info_data .data img{
+    display: flex;
+    width: 13px;
+    height: 13px;
+    margin-left: 160px;
+
+}
+
+input[type="submit"] {
+    background-color: var(--base-second-color);
+    border: none;
+    text-align: center;
+    border-radius: 1rem;
+    padding: .5rem;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #FF74B1;
+    color: white;
+
+}

@@ -1,0 +1,199 @@
+:root{
+    --header-height: 5rem;
+    --distance-inline: 10rem;
+    --distance-block: 4rem;
+    --light-base-color: #F2F2F2;
+    --base-color: #2a92e1;
+    --base-second-color: #8ac7ff;
+    --font-color: #020202;
+    --background-color: #E1FFEE;
+}
+
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Nunito';
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background: #c7c7c7;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-block: 15px;
+
+    width: 635px;
+}
+
+.search-container input[type='submit'] {
+    display: none;
+}
+
+.search-svg {
+    width: 32px;
+    height: 32px;
+    overflow: visible;
+    fill: #8e8e8e;
+    transform-origin: center;
+    transition: 0.25s;
+}
+
+.search-svg:hover {
+    cursor: pointer;
+    fill: #5a5a5a;
+    transform: scale(1.2);
+
+    transition: 0.25s;
+}
+
+
+.search-input {
+    background: transparent;
+    border: none;
+    font-family: 'Nunito';
+    font-style: italic;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #8e8e8e;
+
+    width: 90%;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 750px;
+
+    background: #ffffff;
+    border-radius: 15px;
+    margin: 50px auto;
+    box-shadow: 0 0 15px -5px black;
+
+    font-family: 'Nunito';
+}
+
+
+.table h2 {
+    margin: 15px 0;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 15px;
+    padding-bottom: 5px;
+    width: 635px;
+    gap: 15px;
+
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+
+    margin: 10px;
+}
+
+.button-add {
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 10px;
+    min-width: 10px;
+    margin: 5px 5px;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #c7c7c7;
+    border: none;
+
+    transition: 0.25s;
+}
+
+.button-add:hover {
+    background-color: #5a5a5a;
+    color: #ffffff;
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.button {
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 10px;
+    min-width: 75px;
+    margin: 5px 5px;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #c7c7c7;
+    border: none;
+
+    transition: 0.25s;
+}
+
+.button:hover {
+    background-color: #5a5a5a;
+    color: #ffffff;
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.formulario-enviar:hover {
+    background-color: #5a5a5a;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.end {
+    margin-bottom: 15px;
+}
+
+.warning {
+    display: flex;
+    width: 635px;
+    flex-direction: column;
+}

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;400&display=swap');
+
+:root {
+    --main-width: 1080px;
+    --nav-height: 5rem;
+
+    --distance-inline: 10rem;
+    --distance-block: 4rem;
+    
+    --light-base-color: #F2F2F2;
+    --base-color: #FF74B1;
+    --base-second-color: #FFA1CF;
+    --font-color: #020202;
+    --second-font-color: #2c2c2c;
+    --background-color: #FFF9F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+body {
+    background-color: var(--light-base-color);
+}
+
+h1 {
+    margin: var(--distance-block) var(--distance-inline);
+}
+
+main span {
+    color: var(--font-color);
+}
+
+main {
+    margin-block: var(--distance-block);
+}
+
+/*-----Página de Verdade-----*/
+
+.wrapper {
+    display: flex;
+    margin-inline: var(--distance-inline);
+    gap: 2.5rem;
+
+    flex-wrap: wrap;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1 1 30%;
+
+    gap: 2.5rem;
+}
+
+.checkout-img {
+    width: 6.5rem; 
+    height: 6.5rem;
+}
+
+.checkout-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+
+    box-shadow: 0 0 5px -2.5px black;
+}
+
+.checkout-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    width: 20rem;
+}
+
+.checkout-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-details-text {
+    display: flex;
+    flex-direction: column;
+    color: var(--second-font-color);
+    gap: .5rem;
+}
+
+.checkout-price span:last-child, .checkout-details-text > span {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--font-color);
+}
+
+.checkout-quantity {
+    display: flex;
+    width: 100%;
+    max-width: 50%;
+    gap: .5rem;
+}
+
+.checkout-quantity a, .checkout-quantity span {
+    text-align: center;
+    font-size: 1.25em;
+    border: 1px solid var(--second-font-color); 
+    color: var(--second-font-color);
+
+    padding-inline: .5rem;
+
+    transition: 0.2s;
+}
+
+.checkout-quantity span{
+    padding-inline: 1.125rem;
+}
+
+.checkout-quantity span {
+    color: var(--light-base-color);
+    background-color: var(--second-font-color);
+
+}
+
+.checkout-quantity a:hover{
+    border: 1px solid var(--base-color);
+    color: var(--base-color);
+
+    transition: 0.2s;
+}
+
+/*-----Menu fixo-----*/
+
+.fixed {
+    flex: 1;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    gap: .5rem;
+    box-shadow: 0 0 5px -2.5px black;
+}
+
+.menu-values, .menu-itens {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.menu-itens {
+    font-size: .8rem;
+    color: var(--second-font-color);
+    padding-bottom: .5rem;
+
+    border-bottom: 2px dashed var(--font-color);
+}
+
+.menu-price {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.menu-itens-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-itens-content span {
+    width: 100%;
+    max-width: 50%;
+}
+
+.menu-itens-content span:last-child {
+    text-align: right;
+}
+
+.menu > a {
+    flex-grow: 1;
+
+    text-align: center;
+    font-weight: 600;
+    color: var(--font-color);
+    padding-block: 1rem;
+    background-color: var(--base-second-color);
+}
+
+.menu > a:hover {
+    color: var(--light-base-color);
+    background-color: var(--base-color);
+}

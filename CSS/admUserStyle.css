@@ -1,0 +1,81 @@
+:root {
+    --header-height: 5rem;
+    --distance-inline: 10rem;
+    --distance-block: 4rem;
+    --light-base-color: #F2F2F2;
+    --base-color: #FF74B1;
+    --base-second-color: #FFA1CF;
+    --font-color: #020202;
+    --background-color: #FFF9F9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    background-color: var(--background-color);
+}
+
+.user-table {
+    margin-top: 5rem;
+    width: 960px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: var(--base-second-color);
+}
+
+.table-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    width: 100%;
+    gap: 25px;
+}
+
+.table-row.header{
+    background-color: var(--base-color);
+}
+
+.table-row.header > span {
+    color: var(--light-base-color);
+    font-weight: 600;
+}
+
+.table-row span, .table-row.option {
+    width: 200px;
+    color: var(--font-color);
+}
+
+.option {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.btn-option {
+    display: flex;
+    flex-direction: row;
+    padding: .5rem;
+    background-color: var(--light-base-color);
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.btn-option:hover {
+    cursor: pointer;
+    background-color: var(--base-color);
+    color: var(--light-base-color);
+}

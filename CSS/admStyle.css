@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@200;300;400;600&display=swap');
+
+:root{
+    --header-height: 5rem;
+    --distance-inline: 10rem;
+    --distance-block: 4rem;
+
+    --light-base-color: #F2F2F2;
+    --base-color: #FF74B1;
+    --base-second-color: #FFA1CF;
+    --font-color: #020202;
+    --background-color: #FFF9F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+
+
+/*-----Grid de Items-----*/
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 40rem;
+
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+}
+
+.options-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 960px;
+}
+
+.options-wrapper a {
+    transition: 0.2s;
+}
+
+.options-wrapper a:hover {
+    transform: scale(1.02);
+}
+
+.bigger {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.grid-item {
+    display: grid;
+    position: relative;
+}
+
+.grid-item > span {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    
+    font-weight: 600;
+    color: white;
+    align-self: end;
+}
+
+/*-----Divisor-----*/
+
+.divider{
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, var(--light-base-color), var(--base-color));
+}

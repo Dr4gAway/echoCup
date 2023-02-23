@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/formsStyle.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <section class='formulario'>
+            <form action='./PHP/prod/new_prod.php' method='post'>
+                <h2>Novo produto</h2>
+    
+                <div class="formulario-inputs">
+                    <div class='formulario-item'>
+                        <input type='text' name='nome' class='formulario-input' placeholder='Nome' required>
+            
+                    </div>
+            
+                    <div class='formulario-item'>
+                        <input type='text' name='descricao' class='formulario-input' placeholder='Descrição' required>
+            
+                    </div>
+            
+                    <div class='formulario-item'>
+                        <input type='text' name='preco' class='formulario-input' placeholder='Preço' min='1' required>
+            
+                    </div>
+            
+                    <div class='formulario-item'>
+                        <input type='text' name='custo' class='formulario-input' placeholder='Custo' min='1' required>
+            
+                    </div>
+            
+                    <div class='formulario-item'>
+                        <input type='text' name='cod_visual' class='formulario-input' placeholder='Codigo Visual' required>
+            
+                    </div>
+            
+                    <div class='formulario-item'>
+                        <input type='text' name='margem_lucro' class='formulario-input' placeholder='Margem de Lucro' min='1' required>
+            
+                    </div>
+            
+                    <div class='formulario-item'>
+                        <input type='text' name='icms' class='formulario-input' placeholder='ICMS' min='1' required>
+            
+                    </div>
+            
+                    <div class='formulario-item'>
+                        <input type='text' name='campo_imagem' class='formulario-input' placeholder='Link de Imagem' required>
+            
+                    </div>
+                </div>
+                
+                <div class='formulario-botoes'>
+                    <input type='submit' value='Enviar' class='formulario-enviar submit'>
+                    <a class='formulario-enviar lp' href='./PHP/prod/search_prod.php'>Lista de produtos</a>
+        
+                </div>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>

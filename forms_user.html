@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/formsStyle.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <section class='formulario'>
+            <form action='./PHP/user/new_user.php' method='post'>
+                <h2>Cadastro de novo Usuário</h2>
+    
+                <div class="formulario-inputs">
+                    <div class='formulario-item'>
+                        <input type='text' name='nome' class='formulario-input' placeholder='Nome' required>
+            
+                    </div>
+            
+                    <div class='formulario-item'>
+                        <input type='email' name='mail' class='formulario-input' placeholder='Email' required>
+            
+                    </div>
+            
+                    <div class='formulario-item'>
+                        <input type='password' name='pass' class='formulario-input' placeholder='Senha' required>
+            
+                    </div>
+
+                    <div class="formulario-item">
+                        <input type='tel' name='fone' class='formulario-input' placeholder='Telefone' required>
+
+                    </div>
+
+                </div>
+                
+                <div class='formulario-botoes'>
+                    <input type='submit' value='Enviar' class='formulario-enviar submit'>
+                    <a class='formulario-enviar lp' href='./PHP/user/search_user.php'>Lista de Usuários</a>
+        
+                </div>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
